@@ -98,3 +98,33 @@ var arcs = container.selectAll("path")
 			.attr("fill", function(d ,i) {
 				return "blue"
 			})	
+
+//progress bar
+var width = 500;
+var height = 500;
+var xDisp = 100;
+var yDisp = 100;
+var heightBox = 100;
+var widthBox = 400;
+
+var amountPaid = 10
+var totalDue = 100
+var container = d3.select("body")
+				.append("svg")
+				.attr("width", width)
+				.attr("height", height);
+
+var total = container.append("rect")
+					.attr("x", xDisp)
+					.attr("y", yDisp)
+					.attr("height", heightBox)
+					.attr("width", widthBox)
+					.style("fill", "gray")
+					.style("filter", "urf(#f2)");
+
+var paid = container.append("rect")
+					.attr("x", xDisp)
+					.attr("y", yDisp)
+					.attr("height", heightBox)
+					.attr("width", (amountPaid/totalDue) * widthBox)
+					.style("fill", "orange");
