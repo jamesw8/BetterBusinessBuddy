@@ -9,3 +9,7 @@
 .nav-custom-style a:hover {
 	color: grey;
 }
+
+.navbar {
+	margin-bottom: 0px !important;
+}
