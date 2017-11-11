@@ -7,9 +7,10 @@ class Pie extends Component {
 		return (
 			<div>
 				<div id="divinfo">
-					<div id="userinfo">
-						<h1>Your credit score 706 should qualify you for a bank loan.</h1>
-						<h1>Consider an online search on small business bank loans.</h1>
+					<div>
+						<i className="material-icons thumbsup">thumb_up</i><h1 id="creditinfo">Your <a href="https://goo.gl/EeJMQh" target="_blank">credit score</a> of 706 should qualify you for a bank loan.</h1>
+						<i className="material-icons thumbsup">thumb_up</i><h1 id="slowinfo">The <a href="https://goo.gl/8Bqb4r" target="_blank">interest rate</a> (rate at which you need to pay more on top of the loan) may be below average at 3% instead of 5% with your credit score.</h1>
+						<h1 id="slowerinfo">Consider an <a href="https://goo.gl/yd8VJn" target="_blank">online search</a> on small business bank loans.</h1>
 					</div>
 				</div>
 				<h1>Operational Costs for the first month</h1>

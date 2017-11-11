@@ -1,0 +1,72 @@
+ul {
+	text-align: left;
+	text-decoration: none;
+	list-style: none;
+}
+
+#legend {
+	display: inline-block;
+	margin-top: 10vh;
+}
+
+#pie {
+	margin-top: -3vh;
+	margin-right: 7vh;
+	width: 500px;
+	height: 500px;
+	float: right;
+}
+@keyframes slideFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.thumbsup {
+	opacity: 0;
+	animation: slideFromBottom 0.55s cubic-bezier(.46,.88,.51,.96) 1.10s forwards;
+}
+#divinfo {
+	height: 90vh;
+	border-bottom: 1px solid gray;
+	padding-top: 5vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+#slowinfo {
+	animation: slideFromBottom 1.10s cubic-bezier(.46,.88,.51,.96);
+}
+#slowerinfo {
+	margin-top: 10vh;
+	opacity: 0;
+	animation: slideFromBottom 1.10s ease-out 1.80s forwards;
+}
+#creditinfo {
+	animation: slideFromBottom 1.10s cubic-bezier(.46,.88,.51,.96);
+}
+
+#greenOne {
+	background-color: #596C56;
+}
+
+#greenTwo {
+	background-color: #435D36;
+}
+
+#greenThree {
+	background-color: #78AB46;
+}
+
+#greenFour {
+	background-color: #A9C9A4;
+}
+
+#greenFive {
+	background-color: #78A489;
+}
