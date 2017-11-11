@@ -16,8 +16,11 @@ class Pie extends Component {
 				<h1>Operational Costs for the first month</h1>
 				<div id="legend">
 					<ul>
-						<li><h2><span id="greenOne">&nbsp;&nbsp;&nbsp;&nbsp;</span> Land/Building Costs $25,500</h2></li>
+						<h1>One Time Costs</h1>
 						<li><h2><span id="greenTwo">&nbsp;&nbsp;&nbsp;&nbsp;</span> Kitchen Equipment $381,000</h2></li>
+						
+						<h1>Recurring Costs</h1>
+						<li><h2><span id="greenOne">&nbsp;&nbsp;&nbsp;&nbsp;</span> Land/Building/Furniture Costs $25,500</h2></li>
 						<li><h2><span id="greenThree">&nbsp;&nbsp;&nbsp;&nbsp;</span> Food Supplies $8,100</h2></li>
 						<li><h2><span id="greenFour">&nbsp;&nbsp;&nbsp;&nbsp;</span> Labor $9,000</h2></li>
 						<li><h2><span id="greenFive">&nbsp;&nbsp;&nbsp;&nbsp;</span> Advertising/Marketing $44,500</h2></li>
@@ -52,6 +55,7 @@ class Pie extends Component {
 						]}
 					/>
 				</div>
+
 			</div>
 			);
 	}

@@ -6,15 +6,17 @@ ul {
 
 #legend {
 	display: inline-block;
+	float: left;
 	margin-top: 10vh;
 }
 
 #pie {
 	margin-top: -3vh;
 	margin-right: 7vh;
-	width: 500px;
-	height: 500px;
+	width: 40vw;
+	height: 100vh;
 	float: right;
+	clear: right;
 }
 @keyframes slideFromBottom {
 	0% {
@@ -27,13 +29,16 @@ ul {
 	}
 }
 
+.tooltip {
+	
+}
 .thumbsup {
 	opacity: 0;
 	animation: slideFromBottom 0.55s cubic-bezier(.46,.88,.51,.96) 1.10s forwards;
 }
 #divinfo {
-	height: 90vh;
-	border-bottom: 1px solid gray;
+	height: 95vh;
+	border-bottom: 2px dashed gray;
 	padding-top: 5vh;
 	padding-left: 10vw;
 	padding-right: 10vw;

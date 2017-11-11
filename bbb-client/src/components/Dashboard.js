@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Line, Circle } from 'rc-progress';
 
 class Dashboard extends Component{
 	render(){
 		return(
 			<div>
-				<p>Testing Dashboard Component</p>
-				<Line percent="43" strokeWidth="5" strokeColor="FFCCFF"/>
+				<div class="progress">
+  					<div class="progress-bar" role="progressbar" style={{height:"25px", width:"0%"}}>0</div>
+				</div>
 			</div>
 		);
 	}
