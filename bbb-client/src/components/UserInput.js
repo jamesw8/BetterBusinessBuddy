@@ -55,6 +55,10 @@ class UserInput extends Component{
 					</div>
 				</div>
 			</div>
+
+			<div className="form-group text-center">
+			<input type="submit" className="btn btn-primary" />
+			</div>
 		</form>
 	</div>
 
