@@ -10,6 +10,8 @@ import UserInput from './components/UserInput';
 import Test from './components/Test';
 
 
+import Pie from './components/tempPie';
+
 class Routes extends Component{
 	render(){
 		return(
@@ -24,6 +26,7 @@ class Routes extends Component{
 					<Route path="/dashboard" component={Dashboard}/>
 					<Route path="/UserInput" component={UserInput}/>
 					<Route path="/test" component={Test}/>
+					<Route path="/Pie" component={Pie}/>
 				</Switch>
 			</main>
 		); 
