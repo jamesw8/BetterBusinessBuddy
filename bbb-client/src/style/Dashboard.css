@@ -7,17 +7,22 @@ ul {
 #legend1 {
 	display: inline-block;
 	float: left;
-	margin-top: 10vh;
+	margin-top: 6vh;
+}
+
+#title2 { 
+	display: inline-block;
+	margin: 0 auto;
 }
 
 #legend2 {
 	display: inline-block;
 	float: left;
-	margin-top: 22vh;
+	margin-top: 45vh;
 }
 
 #pie1 {
-	margin-top: -3vh;
+	margin-top: -1vh;
 	margin-right: 7vh;
 	width: 40vw;
 	height: 100vh;
