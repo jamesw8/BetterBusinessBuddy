@@ -1,0 +1,11 @@
+.nav-custom-style {
+	background-color: black;
+}
+
+.nav-custom-style a {
+	color: white;
+}
+
+.nav-custom-style a:hover {
+	color: grey;
+}
