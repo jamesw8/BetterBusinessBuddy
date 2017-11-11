@@ -10,7 +10,7 @@ class Home extends Component {
 					<div id="header-text" className="text-center">	
 						<img id="logo-bbb" src={require('../style/BBB.png')}/>
 						<h2>Better Business Buddy</h2>
-						<p>Making Business Accessable to Everyone</p>
+						<p>Making Business Accessible to Everyone</p>
 						<hr />
 						<Link to="/industry"> <button className="btn btn-success btn-lg">Get Started</button></Link>
 					</div>
