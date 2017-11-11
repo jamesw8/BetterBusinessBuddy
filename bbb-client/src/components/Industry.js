@@ -54,7 +54,7 @@ class Industry extends Component {
     });
 
     if (zip.length === 5) {
-      fetch("http://bbbackend-api.herokuapp.com/yelp/" + zip).then((response) => {
+      fetch("https://bbbackend-api.herokuapp.com/yelp/" + zip).then((response) => {
         return response.text();
       }).then((json) => {
         const json2 = JSON.parse(json);
