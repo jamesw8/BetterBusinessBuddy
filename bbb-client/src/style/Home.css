@@ -5,26 +5,24 @@
 
 #header-text {
   color: white;
-  position: absolute;
-  margin-top: 220px;
-  margin-left: 35%;
+  font-family: 'Open Sans';
+  margin: auto;
+  padding-top: 200px;
+  width: 700px;
+  height: 100px;
 }
 
 #header-text h2 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 #header-text p {
-  font-size: 35px;
+  font-size: 40px;
 }
 
-.animate{
-   background: linear-gradient(230deg, cyan, darkblue);
-   background-size: 100% 100%;
-
-   -webkit-animation: GradientAnimation 10s ease infinite;
-   -moz-animation: GradientAnimation 10s ease infinite;
-   animation: GradientAnimation 10s ease infinite;
+.animate {
+  background: linear-gradient(230deg, cyan, darkblue);
+  background-size: 100% 100%;
 }
 
 .texts {
