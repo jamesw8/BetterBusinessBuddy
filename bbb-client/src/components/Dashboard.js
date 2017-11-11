@@ -43,17 +43,21 @@ var days = container.selectAll("rect")
 					.attr("x", function(d) { return (width/numOfData)*(d.days-1) })
 					.attr("y", function(d) { return height-10*d.loans })
 					.attr("height", function(d) { return height })
-					.attr("width", width/numOfData)
+					.attr("width", width/numOfData-5)
 					.style("fill", color);
 
-var xAxisScale = d3.scale.linear()
-					.range([min(data.days),max(data.days)]);
+// var xAxisScale = d3.scaleLinear()
+// 					.range([0,1000])
 
-var yAxisScale = d3.scale.linear()
-					.range([min(data.loans), max(data.loans)]);
+// var yAxisScale = d3.scaleLinear()
+// 					.range([0,1000]);
 
-var xScale = d3.svg.axis().scale(xAxisScale);
-var yScale = d3.svg.axis().scale(yAxisScale);
+// var xScale = d3.axisBottom().scale(xAxisScale);
+// var yScale = d3.axisLeft().scale(yAxisScale);
 
-var xAxisGroup = container.append("g").call(xScale);
-var yAxisGroup = container.append("g").call(yScale);
+// var xAxisGroup = container.append("g")
+// 					.call(xScale)
+// 					.attr("transform", "translate(" + 0 + "," + (height-25) + ")");
+// var yAxisGroup = container.append("g")
+// 					.call(yScale)
+// 					.attr("transform", "translate(" + 25 + "," + 0 + ")");
