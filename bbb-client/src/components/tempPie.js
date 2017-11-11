@@ -14,19 +14,19 @@ class Pie extends Component {
 					</div>
 				</div>
 				<h1>Operational Costs for the first month</h1>
-				<div id="legend">
+				<div id="legend1">
 					<ul>
-						<h1>One Time Costs</h1>
+						<h1>One Time Cost</h1>
 						<li><h2><span id="greenTwo">&nbsp;&nbsp;&nbsp;&nbsp;</span> Kitchen Equipment $381,000</h2></li>
 						
 						<h1>Recurring Costs</h1>
-						<li><h2><span id="greenOne">&nbsp;&nbsp;&nbsp;&nbsp;</span> Land/Building/Furniture Costs $25,500</h2></li>
+						<li><h2><span id="greenOne">&nbsp;&nbsp;&nbsp;&nbsp;</span> Land/Building/Furniture Costs $65,500</h2></li>
 						<li><h2><span id="greenThree">&nbsp;&nbsp;&nbsp;&nbsp;</span> Food Supplies $8,100</h2></li>
 						<li><h2><span id="greenFour">&nbsp;&nbsp;&nbsp;&nbsp;</span> Labor $9,000</h2></li>
 						<li><h2><span id="greenFive">&nbsp;&nbsp;&nbsp;&nbsp;</span> Advertising/Marketing $44,500</h2></li>
 					</ul>
 				</div>
-				<div id="pie" className="container">
+				<div id="pie1" className="container">
 					<div>
 						<h2>Operational Costs $455,100</h2>
 					</div>
@@ -34,7 +34,49 @@ class Pie extends Component {
 					slices={[
 						{
 							color: '#596C56',
-							value: 12500,
+							value: 65500,
+						},
+						{
+							color: '#435D36',
+							value: 381000,
+						},
+						{
+							color: '#78AB46',
+							value: 8100,
+						},
+						{
+							color: '#A9C9A4',
+							value: 9000,
+						},
+						{
+							color: '#78A489',
+							value: 44500,
+						},
+						]}
+					/>
+				</div>
+				<h1>Operational Costs for the first month</h1>
+				<div id="legend2">
+					<ul>
+						<h1>One Time Cost</h1>
+						<li><h2><span id="greenTwo">&nbsp;&nbsp;&nbsp;&nbsp;</span> Kitchen Equipment $381,000</h2></li>
+						
+						<h1>Recurring Costs</h1>
+						<li><h2><span id="greenOne">&nbsp;&nbsp;&nbsp;&nbsp;</span> Land/Building/Furniture Costs $65,500</h2></li>
+						<li><h2><span id="greenThree">&nbsp;&nbsp;&nbsp;&nbsp;</span> Food Supplies $8,100</h2></li>
+						<li><h2><span id="greenFour">&nbsp;&nbsp;&nbsp;&nbsp;</span> Labor $9,000</h2></li>
+						<li><h2><span id="greenFive">&nbsp;&nbsp;&nbsp;&nbsp;</span> Advertising/Marketing $44,500</h2></li>
+					</ul>
+				</div>
+				<div id="pie2" className="container">
+					<div>
+						<h2>Operational Costs $455,100</h2>
+					</div>
+					<PieChart
+					slices={[
+						{
+							color: '#596C56',
+							value: 65500,
 						},
 						{
 							color: '#435D36',

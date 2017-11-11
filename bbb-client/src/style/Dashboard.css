@@ -4,13 +4,28 @@ ul {
 	list-style: none;
 }
 
-#legend {
+#legend1 {
 	display: inline-block;
 	float: left;
 	margin-top: 10vh;
 }
 
-#pie {
+#legend2 {
+	display: inline-block;
+	float: left;
+	margin-top: 22vh;
+}
+
+#pie1 {
+	margin-top: -3vh;
+	margin-right: 7vh;
+	width: 40vw;
+	height: 100vh;
+	float: right;
+	clear: right;
+}
+
+#pie2 {
 	margin-top: -3vh;
 	margin-right: 7vh;
 	width: 40vw;
@@ -30,7 +45,7 @@ ul {
 }
 
 .tooltip {
-	
+
 }
 .thumbsup {
 	opacity: 0;
