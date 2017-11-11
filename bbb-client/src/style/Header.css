@@ -1,5 +1,5 @@
 .nav-custom-style {
-	background-color: black;
+	background-color: #2F4F4F;
 }
 
 .nav-custom-style a {
@@ -7,9 +7,10 @@
 }
 
 .nav-custom-style a:hover {
-	color: grey;
+	color: #D3D3D3;
 }
 
 .navbar {
 	margin-bottom: 0px !important;
+	border-radius: 0px !important;
 }
