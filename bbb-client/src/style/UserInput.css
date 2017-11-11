@@ -1,0 +1,35 @@
+.page {
+	height: 100vh;
+}
+
+.bg {
+    padding-top: 50px;
+}
+
+.location {
+	font-size: 80px;
+	font-family: helvetic;
+	margin-top: 100px;
+}
+
+.drop {
+	height: 20px;
+}
+
+.form-control {
+	display: inline;
+    width: 50px;
+    margin-top: 20px;
+}
+
+#zip-style {
+	padding-bottom: 30px;
+}
+
+#submit-button {
+	padding-bottom: 30px;
+}
+
+ul {
+	list-style-type: none;
+}

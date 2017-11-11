@@ -3,12 +3,13 @@
 }
 
 .bg {
-	font-family: helvetic;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .location {
 	font-size: 80px;
+	font-family: helvetic;
+	margin-top: 100px;
 }
 
 .drop {
@@ -27,4 +28,8 @@
 
 #submit-button {
 	padding-bottom: 30px;
+}
+
+ul {
+	list-style-type: none;
 }

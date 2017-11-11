@@ -31,10 +31,8 @@ function City(props) {
 function ZipSearchField(props) {
   return (
     <div className="search">
-      <form className="form-inline">
-        <label className="form-control-static">Zip Code:</label>
-        <input className="form-control" type="text" placeholder="Try 10016" onChange={props.handleClick} />
-      </form>
+    	<input className="form-control" type="text" placeholder="Enter Zipcode" onChange={props.handleClick} />	
+    	<br />
     </div>);
 }
 
@@ -72,13 +70,15 @@ class Industry extends Component {
 	render(){
 		return(
 			<div className="page">
+				<h1 className="location">What is your Business?</h1>
 				<div className="bg">
-					<h1 className="location">What is your Business?</h1>
+					
 					<div className="container">
 						<form>
 							<FormGroup controlId="formControlsSelect">
-								<FormControl className="drop" componentClass="select" placeholder="select">
-									<option value="select">Restaurant</option>
+								<FormControl className="drop" componentClass="select" placeholder="Business Type">
+									<option value="other">Business Type</option>
+									<option value="other">Restaurant</option>
 									<option value="other">Cafe</option>
 									<option value="other">Botique</option>
 									<option value="other">Other</option>
@@ -86,7 +86,8 @@ class Industry extends Component {
 							</FormGroup>
 						</form>
 						<ZipSearchField id="zip-style" handleClick={this.handleClick} />
-						<Link id="submit-button" to="/UserInput"><button className="btn default" type="button">Next</button></Link>
+						<Link id="submit-button" to="/UserInput"><button className="btn btn-primary" type="button">Next</button></Link>
+						<hr />
 				        <div>
 				        	{this.state.cities}
 				        </div>
