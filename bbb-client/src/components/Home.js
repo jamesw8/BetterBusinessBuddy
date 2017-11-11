@@ -1,12 +1,43 @@
 import React, { Component } from 'react';
+import '../style/Home.css';
 
 class Home extends Component{
 	render(){
 		return(
-			<div className="container">
-				<div className="jumbotron text-center">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<div>
+				<div id="colors" className="container-fluid animate">
+					<div id="header-text" className="text-center">	
+						<h2>Better Business Buddy</h2>
+						<p>Helping you grow</p>
+						<hr />
+						<button className="btn">Get Started</button>
+					</div>
+				</div>
+
+				<div className="container">
+					<div className="row texts">
+						<div className="col col-md-4">
+							<i className="material-icons">location_on</i>
+							<h3>Find Your Location</h3>
+							<p>Enter your future business location and we will figure out how you would fare with the competition.</p>
+						</div>
+						<div className="col col-md-4">
+							<i className="material-icons">trending_up</i>
+							<h3>Get Insights</h3>
+							<p>Our tool will ask for your credit score and other information to figure out what is the best for you.</p>
+						</div>
+						<div className="col col-md-4">
+							<i className="material-icons">poll</i>
+							<h3>Plan Ahead</h3>
+							<p>With our interactive and easy-to-understand user interface, we can help save money with your future expenses.</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="footer" className="container-fluid">
+					<div className="text-center">
+						<p>Copyright Better Business Buddy 2017</p>
+					</div>
 				</div>
 			</div>
 		);
