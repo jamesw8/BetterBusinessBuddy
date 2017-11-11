@@ -1,0 +1,22 @@
+.page {
+	height: 100vh;
+}
+
+.bg {
+	font-family: helvetic;
+    padding-top: 150px;
+}
+
+.location {
+	font-size: 80px;
+}
+
+.drop {
+	height: 20px;
+}
+
+.form-control {
+	display: inline;
+    width: 50px;
+    margin-top: 20px;
+}
