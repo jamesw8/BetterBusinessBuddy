@@ -26,6 +26,12 @@ class UserInput extends Component{
 						<input type="text" name="assets" className="form-control" id="assets" />
 					</div>
 				</div>
+				<div className="form-group row">
+					<div className="container">
+						<label for="available-funds" className="col-sm-2 col-form-label">Available Funds</label>
+						<input type="text" name="available-funds" className="form-control" id="available-funds" placeholder="How much do you have available for paying off a loan?" />
+					</div>
+				</div>
 
 				<div className="form-group row">
 					<label className="col-sm-6 col-form-label">How experienced are you? (1 is the least, 5 is the most)</label>
