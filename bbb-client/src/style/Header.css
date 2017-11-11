@@ -13,11 +13,6 @@
 .navbar {
 	margin-bottom: 0px !important;
 	border-radius: 0px !important;
-	-webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 1 8px 10px -3px black;
+	padding: 10px 0px;
 }
 
-.navbar-style {
-	box-shadow: 10px 10px 5px #888888;
-}

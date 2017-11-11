@@ -8,8 +8,9 @@ class Home extends Component {
 			<div>
 				<div id="colors" className="container-fluid animate">
 					<div id="header-text" className="text-center">	
+						<img id="logo-bbb" src={require('../style/BBB.png')}/>
 						<h2>Better Business Buddy</h2>
-						<p>Helping you grow</p>
+						<p>Making Business Accessable to Everyone</p>
 						<hr />
 						<Link to="/industry"> <button className="btn btn-success btn-lg">Get Started</button></Link>
 					</div>

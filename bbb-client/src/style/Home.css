@@ -7,8 +7,8 @@
   color: white;
   font-family: 'Open Sans';
   margin: auto;
-  padding-top: 200px;
-  width: 700px;
+  padding-top: 80px;
+  width: 900px;
   height: 100px;
 }
 
@@ -49,3 +49,14 @@
   color: white;
   padding-top: 12px;
 }
+
+#logo-bbb {
+  opacity: 0;
+  width: 20%;
+  animation: fadeIn 5.10s cubic-bezier(.46,.88,.51,.96) 1.10s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
