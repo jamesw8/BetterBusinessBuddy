@@ -45,3 +45,15 @@ var days = container.selectAll("rect")
 					.attr("height", function(d) { return height })
 					.attr("width", width/numOfData)
 					.style("fill", color);
+
+var xAxisScale = d3.scale.linear()
+					.range([min(data.days),max(data.days)]);
+
+var yAxisScale = d3.scale.linear()
+					.range([min(data.loans), max(data.loans)]);
+
+var xScale = d3.svg.axis().scale(xAxisScale);
+var yScale = d3.svg.axis().scale(yAxisScale);
+
+var xAxisGroup = container.append("g").call(xScale);
+var yAxisGroup = container.append("g").call(yScale);
