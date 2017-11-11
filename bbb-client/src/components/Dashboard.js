@@ -11,7 +11,6 @@ class Dashboard extends Component{
 };
 
 export default Dashboard;
-
 var data = [
 	{"days": 1, "loans": 20},
 	{"days": 2, "loans": 10},
@@ -61,3 +60,71 @@ var days = container.selectAll("rect")
 // var yAxisGroup = container.append("g")
 // 					.call(yScale)
 // 					.attr("transform", "translate(" + 25 + "," + 0 + ")");
+
+//pi graph
+var data = [
+	{"type":"building property", "cost": 10},
+	{"type":"kitchen equipment", "cost": 20},
+	{"type":"food supples", "cost": 25},
+	{"type":"labor", "cost": 31},
+	{"type":"marketing", "cost": 16}];
+
+var width = 600;
+var height = 600;
+var radius = 300;
+var color = d3.scaleOrdinal()
+				.range(["FFCC00", "FFCC66", "FFCC99", "FFCCCC", "FFCCFF"]);
+
+var container = d3.select("body")
+					.append("svg")
+					.attr("width", width)
+					.attr("height", height)
+					.append("g")
+					.attr("transform", "translate(" + radius + "," + radius + ")");
+
+var arc = d3.arc()
+			.outerRadius(radius)
+			.innerRadius(0)
+
+var pie = d3.pie()
+			.value(function(d) { return d.cost })
+			.sort(null);
+
+var arcs = container.selectAll("path")
+			.data(pie(data))
+			.enter()
+			.append("path")
+			.attr("d", arc)
+			.attr("fill", function(d ,i) {
+				return "blue"
+			})	
+
+//progress bar
+var width = 500;
+var height = 500;
+var xDisp = 100;
+var yDisp = 100;
+var heightBox = 100;
+var widthBox = 400;
+
+var amountPaid = 10
+var totalDue = 100
+var container = d3.select("body")
+				.append("svg")
+				.attr("width", width)
+				.attr("height", height);
+
+var total = container.append("rect")
+					.attr("x", xDisp)
+					.attr("y", yDisp)
+					.attr("height", heightBox)
+					.attr("width", widthBox)
+					.style("fill", "gray")
+					.style("filter", "urf(#f2)");
+
+var paid = container.append("rect")
+					.attr("x", xDisp)
+					.attr("y", yDisp)
+					.attr("height", heightBox)
+					.attr("width", (amountPaid/totalDue) * widthBox)
+					.style("fill", "orange");
