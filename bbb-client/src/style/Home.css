@@ -1,0 +1,51 @@
+#colors {
+  background-color: #00008B;
+  height: 700px;
+}
+
+#header-text {
+  color: white;
+  font-family: 'Open Sans';
+  margin: auto;
+  padding-top: 200px;
+  width: 700px;
+  height: 100px;
+}
+
+#header-text h2 {
+  font-size: 60px;
+}
+
+#header-text p {
+  font-size: 40px;
+}
+
+.animate {
+  background: linear-gradient(230deg, cyan, darkblue);
+  background-size: 100% 100%;
+}
+
+.texts {
+  margin-top: 50px;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.texts p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.material-icons {
+  font-size: 60px;
+}
+
+#footer {
+  background-color: black;
+  height: 50px;
+}
+
+#footer p {
+  color: white;
+  padding-top: 12px;
+}
